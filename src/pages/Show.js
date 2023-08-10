@@ -13,7 +13,7 @@ const Show = (props) => {
             <input type='text' name='name' placeholder='cheeze name' defaultValue={cheeze.name}/>
             <input type='text' name='title' placeholder='cheeze title' defaultValue={cheeze.title}/>
             <input type='text' name='image' placeholder='cheezy pic' defaultValue={cheeze.image}/>
-            <input type='submit' value='Update Person'/>
+            <input type='submit' value='Update Cheeze'/>
             </Form>
             
             <h2>Delete {cheeze.name}</h2>
