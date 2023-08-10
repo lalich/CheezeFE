@@ -26,19 +26,19 @@ export const updateAction = async ({request, params}) => {
         image: formData.get('image'),
         title: formData.get('title')
     }
-    await fetch(`${baseUrl}/${id}`, {
+    await fetch(`${baseUrl}/cheeze/${id}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(updateCheeze)
     })
-    return redirect(`${id}`)
+    return redirect(`/`)
 }
 
 export const deleteAction = async ({params}) => {
     const id = params.id
-    await fetch(`${baseUrl}/${id}`, {
+    await fetch(`${baseUrl}/cheeze/${id}`, {
         method: 'DELETE',
      
     })

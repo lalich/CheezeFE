@@ -15,7 +15,7 @@ const Index = (props) => {
 
             {cheeze.map((cheeze, index) => {
                 return (
-                    <div key={cheeze._id} classname='cheeze'>
+                    <div key={cheeze._id} className='cheeze'>
                         <Link to={`/${cheeze._id}`}>
                             <h2>{cheeze.name}</h2>
                         </Link>

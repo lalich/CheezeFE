@@ -17,8 +17,7 @@ const Show = (props) => {
             </Form>
             
             <h2>Delete {cheeze.name}</h2>
-            <Form action={`/delete${cheeze._id}`}
-            method='post'>
+            <Form action={`/delete/${cheeze._id}`} method='DELETE'>
                 <input type='submit' value='No more churning this cheda!'/>
             </Form>
             
